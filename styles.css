@@ -1,0 +1,110 @@
+#canvas{
+    width:100vw;
+    height:100vh;
+    background:black;
+    margin:0;
+    left:0;
+    top:0;
+    position:fixed;
+    overflow:scroll;
+}
+#navbar{
+    background:black;
+    position:sticky;
+    width:100%;
+    height: 10%;
+    margin:0 0 2.5% 0;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: space-between;
+    z-index:1;
+    border-bottom: 1px solid white;
+}
+
+#wordmark{
+    height:60%;
+    width:auto;
+    margin: 2.25% 5% 0% 0%;
+    position:relative;
+}
+
+#menu{
+    width:7.5vh;
+    height:7.5vh;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    margin: 1% 0% 0% 4.25%;
+    position:relative;
+    transition:300ms;
+}
+
+.menuBar{
+    background:white;
+    width:65%;
+    height:10%;
+    margin:7.5%;
+    border-radius: 2.5px;
+}
+
+#content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#heroImage{
+    height:auto;
+    width:90%;
+    margin:2.5% 5% 2.5% 5%;
+    filter: grayscale(100%);
+    transition:300ms;
+}
+
+#bio{
+    margin:2.5% 5% 2.5% 5%;
+    color: white;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width:90%;
+}
+
+.contact{
+    height:auto;
+    width:90%;
+    margin:2.5% 5% 2.5% 5%;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color:white;
+    transition:300ms;
+}
+
+#contactInfo{
+    margin:2.5% 0 2.5% 0;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#linkedInIcon{
+    width:75%;
+    height:auto;
+}
+
+#gMailIcon{
+    width:97.5%;
+    height:auto;
+}
+
+#beIcon{
+    width:80%;
+    height:auto;
+}
+
+#instaIcon{
+    width:80%;
+    height:auto;
+}
