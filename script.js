@@ -11,18 +11,18 @@ heroImage.onmouseleave = function(){
 };
 
 menu.onmouseover = function(){
-    this.style.transform = "scale(1.1)";
+    this.style.transform = "scale(1.1,1.1)";
 };
 
 menu.onmouseleave = function(){
-    this.style.transform = "scale(1)";
+    this.style.transform = "scale(1,1)";
 };
 
 for (let contact of contacts) {
     contact.onmouseover = function(){
-        this.style.transform = "scale(1.1)";
+        this.style.transform = "scale(1.1,1.1)";
     };
     contact.onmouseleave = function(){
-        this.style.transform = "scale(1)";
+        this.style.transform = "scale(1,1)";
     };
 };

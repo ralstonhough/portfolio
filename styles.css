@@ -38,6 +38,7 @@
     margin: 2% 0% 0% 4.25%;
     position:relative;
     transition:300ms;
+    transform-origin: center;
 }
 
 .menuBar{
@@ -88,6 +89,7 @@
     text-decoration: none;
     color:white;
     transition:300ms;
+    transform-origin:center;
 }
 
 #contactInfo{
@@ -159,6 +161,7 @@
         margin: 1% 0% 0% 4.25%;
         position:relative;
         transition:300ms;
+        transform-origin:center;
     }
 
     .menuBar{
@@ -208,6 +211,7 @@
         text-decoration: none;
         color:white;
         transition:300ms;
+        transform-origin:center;
     }
 
     #contactInfo{
