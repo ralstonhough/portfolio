@@ -1,125 +1,4 @@
-#canvas{
-    width:100vw;
-    height:100vh;
-    background:black;
-    margin:0;
-    left:0;
-    top:0;
-    position:fixed;
-    overflow:scroll;
-}
-#navbar{
-    background:black;
-    position:sticky;
-    width:100%;
-    height: 10%;
-    margin:0 0 2.5% 0;
-    top:0;
-    left:0;
-    display:flex;
-    justify-content: space-between;
-    z-index:1;
-    transition:300ms;
-}
-
-#wordmark{
-    height:60%;
-    width:auto;
-    margin: 2.25% 5% 0% 0%;
-    position:relative;
-}
-
-#menu{
-    width:7.5vh;
-    height:7.5vh;
-    display:flex;
-    justify-content: center;
-    flex-direction:column;
-    margin: 2% 0% 0% 4.25%;
-    position:relative;
-    transition:300ms;
-    transform-origin: center;
-}
-
-.menuBar{
-    background:white;
-    width:65%;
-    height:10%;
-    margin:7.5%;
-    border-radius: 2.5px;
-}
-
-#content{
-    display:flex;
-    flex-direction:row;
-}
-
-#leftColumn{
-    display:flex;
-    width:50%;
-    flex-direction:column;
-    margin: 0 2.5% 2.5% 2.5%;
-}
-
-#heroImage{
-    height:auto;
-    width:50%;
-    margin:2.5% 5% 2.5% 2.5%;
-    filter: grayscale(100%);
-    transition:300ms;
-}
-
-#bio{
-    margin:5% 2.5% 2.5% 5%;
-    color: gray;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.6vw;
-    width:100%;
-}
-
-.contact{
-    height:auto;
-    width:90%;
-    margin:2.5% 5% 2.5% 5%;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    color:white;
-    transition:300ms;
-    transform-origin:center;
-}
-
-#contactInfo{
-    margin:0;
-    width:100%;
-    display:flex;
-    justify-content: space-evenly;
-}
-
-#linkedInIcon{
-    width:42.5%;
-    height:auto;
-}
-
-#gMailIcon{
-    width:50%;
-    height:auto;
-}
-
-#beIcon{
-    width:50%;
-    height:auto;
-}
-
-#instaIcon{
-    width:50%;
-    height:auto;
-}
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 820px) {
     #canvas{
         width:100vw;
         height:100vh;
@@ -128,116 +7,102 @@
         left:0;
         top:0;
         position:fixed;
-        overflow:scroll;
     }
     #navbar{
         background:black;
         position:sticky;
         width:100%;
-        height: 10%;
-        margin:0 0 2.5% 0;
+        height: 8%;
+        margin:0 0 8% 0;
         top:0;
         left:0;
         display:flex;
         justify-content: space-between;
         z-index:1;
-        border-bottom: 1px solid white;
         transition:300ms;
     }
-
+    
     #wordmark{
-        height:60%;
+        height:100%;
         width:auto;
-        margin: 2.25% 5% 0% 0%;
-        position:relative;
+        margin: 4% 4% 0% 0%;
     }
-
+    
     #menu{
-        width:7.5vh;
-        height:7.5vh;
+        height:100%;
+        width: 16%;
         display:flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction:column;
-        margin: 1% 0% 0% 4.25%;
-        position:relative;
         transition:300ms;
-        transform-origin:center;
+        transform-origin: center;
+        margin: 4% 0% 0% 4%;
     }
-
+    
     .menuBar{
         background:white;
-        width:65%;
-        height:10%;
-        margin:7.5%;
-        border-radius: 2.5px;
+        width:100%;
+        height:12%;
+        margin:2% 0 2% 0;
     }
-
+    
     #content{
         display:flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-    }
-
-    #leftColumn{
-        display:flex;
-        width:90%;
         flex-direction:column;
-        margin: 0 2.5% 2.5% 2.5%;
+        position:fixed;
+        width: 92%;
+        left:4%;
+        height: 80vh;
+        overflow: scroll;
     }
-
+    
     #heroImage{
         height:auto;
-        width:90%;
-        margin:2.5% 5% 2.5% 5%;
+        width:100%;
         filter: grayscale(100%);
         transition:300ms;
+        margin: 0 0 8% 0;
     }
-
+    
     #bio{
         color: gray;
         font-family: proxima-nova, sans-serif;
         font-weight: 300;
         font-style: normal;
-        font-size: 1em;
+        font-size: 3vw;
+        line-height: 4vw;
         width:100%;
+        margin: 0 0 8% 0;
     }
-
-    .contact{
-        height:auto;
-        width:100%;
-        font-family: proxima-nova, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        text-decoration: none;
-        color:white;
-        transition:300ms;
-        transform-origin:center;
-    }
-
+    
     #contactInfo{
         width:100%;
         display:flex;
-        justify-content: space-evenly;
-        margin:0;
+        justify-content:space-between;
     }
-
+    
+    .contact{
+        transition:300ms;
+        transform-origin:center;
+    }
+    
     #linkedInIcon{
-        width:42.5%;
-        height:auto;
+        max-width: 21.5%;
+        height: auto;
     }
-
+    
     #gMailIcon{
-        width:50%;
-        height:auto;
+        max-width: 30%;
+        height: auto;
     }
-
+    
     #beIcon{
-        width:50%;
-        height:auto;
+        max-width: 25%;
+        height: auto;
     }
-
+    
     #instaIcon{
-        width:50%;
-        height:auto;
+        max-width: 70%;
+        height: auto;
     }
 }
