@@ -2,6 +2,8 @@ let heroImage = document.getElementById("heroImage");
 let contacts = document.getElementsByClassName("contact");
 let menu = document.getElementById("menu");
 let unselected = document.getElementsByClassName("unselected");
+let dropDown = document.getElementById("dropDown");
+let dropDownOpacity = 0;
 
 for (let target of unselected) {
     target.onmouseover = function(){
@@ -30,7 +32,17 @@ menu.onmouseleave = function(){
 };
 
 menu.onclick = function(){
-    
+    if (dropDownOpacity == 0) {
+        dropDown.style.opacity="1";
+        dropDown.style.visibility="visible";
+        dropDown.style.display="block";
+        dropDownOpacity = 1;
+    } else {
+        dropDown.style.opacity="0";
+        dropDown.style.visibility="hidden";
+        dropDown.style.display="none";
+        dropDownOpacity = 0;
+    };
 };
 
 for (let contact of contacts) {
