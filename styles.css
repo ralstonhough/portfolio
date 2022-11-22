@@ -1,5 +1,6 @@
 a{
     cursor:crosshair;
+    text-decoration: none;
 }
 
 #canvas{
@@ -134,7 +135,7 @@ a{
     height: auto;
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 800px) {
     #rightContainer{
         width:100%;
     }
