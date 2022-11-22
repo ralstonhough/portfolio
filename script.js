@@ -29,6 +29,10 @@ menu.onmouseleave = function(){
     this.style.transform = "scale(1,1)";
 };
 
+menu.onclick = function(){
+    
+};
+
 for (let contact of contacts) {
     contact.onmouseover = function(){
         this.style.transform = "scale(1.1,1.1)";
