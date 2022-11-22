@@ -164,7 +164,7 @@ html{
         top:0;
         left:0;
         display:flex;
-        justify-content: space-between;
+        justify-content: end;
         z-index:1;
         transition:300ms;
     }
@@ -177,6 +177,7 @@ html{
         color:white;
         opacity: 0;
         transition:300ms;
+        display:none;
     }
     
     #wordmark{
