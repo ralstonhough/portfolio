@@ -96,8 +96,8 @@ a{
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 2vw;
-    line-height: 2.5vw;
+    font-size: 1.2vw;
+    line-height: 1.6vw;
     width:100%;
     margin: 0 0 8% 0;
 }
@@ -169,6 +169,7 @@ a{
         letter-spacing: .25vw;
         color:white;
         opacity: 0;
+        transition:300ms;
     }
     
     #wordmark{
