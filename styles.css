@@ -135,6 +135,12 @@ a{
     height: auto;
 }
 
+html{
+    visibility: visible;
+    opacity:1;
+    display:block;
+}
+
 @media screen and (max-width: 800px) {
     #rightContainer{
         width:100%;
@@ -261,5 +267,11 @@ a{
     #instaIcon{
         max-width: 70%;
         height: auto;
+    }
+
+    html{
+        visibility: visible;
+        opacity:1;
+        display:block;
     }
 }
