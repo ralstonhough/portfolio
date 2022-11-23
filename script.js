@@ -3,6 +3,8 @@ let contacts = document.getElementsByClassName("contact");
 let menu = document.getElementById("menu");
 let unselected = document.getElementsByClassName("unselected");
 let dropDown = document.getElementById("dropDown");
+let content = document.getElementById("content");
+let dropNavCats = document.getElementsByClassName("dropNavCat");
 let dropDownOpacity = 0;
 
 for (let target of unselected) {
@@ -13,14 +15,6 @@ for (let target of unselected) {
     target.onmouseleave = function(){
         this.style.textDecoration = "none";
     };
-};
-
-heroImage.onmouseover = function(){
-    this.style.filter = "grayscale(0%)";
-};
-
-heroImage.onmouseleave = function(){
-    this.style.filter = "grayscale(100%)";
 };
 
 menu.onmouseover = function(){
@@ -34,13 +28,23 @@ menu.onmouseleave = function(){
 menu.onclick = function(){
     if (dropDownOpacity == 0) {
         dropDown.style.opacity="1";
-        dropDown.style.visibility="visible";
-        dropDown.style.display="block";
+        dropDown.style.height ="100%";
+        content.style.overflow = "hidden";
+        for (let cat of dropNavCats) {
+            cat.style.visibility = "visible";
+            cat.style.opacity = "1";
+            cat.style.display = "inline";
+        };
         dropDownOpacity = 1;
     } else {
         dropDown.style.opacity="0";
-        dropDown.style.visibility="hidden";
-        dropDown.style.display="none";
+        dropDown.style.height ="0";
+        content.style.overflow = "scroll";
+        for (let cat of dropNavCats) {
+            cat.style.visibility = "hidden";
+            cat.style.opacity = "0";
+            cat.style.display = "none";
+        };
         dropDownOpacity = 0;
     };
 };
@@ -52,4 +56,16 @@ for (let contact of contacts) {
     contact.onmouseleave = function(){
         this.style.transform = "scale(1,1)";
     };
+};
+
+window.onresize = function(){
+    dropDown.style.opacity="0";
+    dropDown.style.height ="0";
+    content.style.overflow = "scroll";
+    for (let cat of dropNavCats) {
+        cat.style.visibility = "hidden";
+        cat.style.opacity = "0";
+        cat.style.display = "none";
+    };
+    dropDownOpacity = 0;
 };
