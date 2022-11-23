@@ -173,9 +173,17 @@ html{
         margin: 0 0 5vw 0;
         color:white;
         opacity:0;
-        visibility: visible;
-        display: inline;
-        transition: 100ms 300ms;
+        transition: opacity 100ms 300ms;
+    }
+
+    .unfolded{
+        visibility:visible;
+        display:inline;
+    }
+
+    .folded{
+        visibility:hidden;
+        display:none;
     }
     
     #rightContainer{
