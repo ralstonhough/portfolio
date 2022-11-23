@@ -156,7 +156,7 @@ html{
         width:100%;
         background:black;
         height: 0;
-        position:absolute;
+        position:fixed;
         z-index:3;
         opacity:0;
         transition: height 300ms;
@@ -173,8 +173,9 @@ html{
         margin: 0 0 5vw 0;
         color:white;
         opacity:0;
-        visibility: hidden;
-        display:none;
+        visibility: visible;
+        display: inline;
+        transition: 100ms 300ms;
     }
     
     #rightContainer{

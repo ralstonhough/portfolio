@@ -31,8 +31,8 @@ menu.onclick = function(){
         dropDown.style.height ="100%";
         content.style.overflow = "hidden";
         for (let cat of dropNavCats) {
-            cat.style.visibility = "visible";
             cat.style.opacity = "1";
+            cat.style.visibility = "visible";
             cat.style.display = "inline";
         };
         dropDownOpacity = 1;
@@ -41,9 +41,7 @@ menu.onclick = function(){
         dropDown.style.height ="0";
         content.style.overflow = "scroll";
         for (let cat of dropNavCats) {
-            cat.style.visibility = "hidden";
             cat.style.opacity = "0";
-            cat.style.display = "none";
         };
         dropDownOpacity = 0;
     };
