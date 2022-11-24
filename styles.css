@@ -25,7 +25,7 @@ a{
 }
 
 #topBar{
-    height:12%;
+    height:16%;
     width: 100%;
     position:sticky;
     margin: 0 0 4% 0;
@@ -62,7 +62,7 @@ a{
 }
 
 #wordmark{
-    width:22%;
+    width:22.5vw;
     height:auto;
     position:absolute;
     z-index:2;
@@ -246,12 +246,12 @@ html{
     }
     
     #wordmark{
-        height:12vw;
+        height:8vh;
         width:auto;
         position:absolute;
         z-index:2;
         right:4%;
-        top:8%;
+        top:11%;
     }
     
     #menu{
