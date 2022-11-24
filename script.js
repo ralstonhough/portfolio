@@ -1,6 +1,7 @@
 let heroImage = document.getElementById("heroImage");
 let contacts = document.getElementsByClassName("contact");
 let menu = document.getElementById("menu");
+let menuBars = document.getElementsByClassName("menuBar");
 let unselected = document.getElementsByClassName("unselected");
 let dropDown = document.getElementById("dropDown");
 let content = document.getElementById("content");
@@ -31,9 +32,11 @@ menu.onclick = function(){
         dropDown.style.height ="100%";
         content.style.overflow = "hidden";
         for (let cat of dropNavCats) {
-            cat.style.opacity = "1";
             cat.classList.add("unfolded");
             cat.classList.remove("folded");
+            setTimeout(function() {
+                cat.style.opacity = "1";
+            }, 300);
         };
         dropDownOpacity = 1;
     } else {
@@ -41,9 +44,11 @@ menu.onclick = function(){
         dropDown.style.height ="0";
         content.style.overflow = "scroll";
         for (let cat of dropNavCats) {
-            cat.style.opacity = "0";
             cat.classList.remove("unfolded");
             cat.classList.add("folded");
+            setTimeout(function() {
+                cat.style.opacity = "0";
+            }, 300);
         };
         dropDownOpacity = 0;
     };

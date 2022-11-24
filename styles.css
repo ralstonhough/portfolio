@@ -107,8 +107,8 @@ a{
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.2vw;
-    line-height: 1.6vw;
+    font-size: 1.4vw;
+    line-height: 1.8vw;
     width:100%;
     margin: 0 0 8% 0;
 }
@@ -173,7 +173,7 @@ html{
         margin: 0 0 5vw 0;
         color:white;
         opacity:0;
-        transition: opacity 100ms 300ms;
+        transition: opacity 200ms;
     }
 
     .unfolded{
@@ -265,7 +265,7 @@ html{
         position:fixed;
         width: 92%;
         left:4%;
-        height: 80%;
+        height: 82.5%;
         overflow:scroll;
     }
     
@@ -286,8 +286,8 @@ html{
         font-family: proxima-nova, sans-serif;
         font-weight: 300;
         font-style: normal;
-        font-size: 5.5vw;
-        line-height: 6.6vw;
+        font-size: 4.8vw;
+        line-height: 6vw;
         width:100%;
         margin: 0 0 4% 0;
     }
