@@ -98,6 +98,28 @@ a{
     left:4%;
 }
 
+#grid{
+    overflow-y:scroll;
+    height:80vh;
+    width:92vw;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.gridItem{
+    max-width:43vw;
+    height:auto;
+    filter:grayscale(100%);
+    transition:300ms;
+    margin: 0 0 4vw 0;
+}
+
+.gridItem:hover{
+    filter:grayscale(0%);
+}
+
 #heroImage{
     height:auto;
     width:66vw;
@@ -288,19 +310,17 @@ html{
     }
     
     #grid{
-        width:calc(100% - 1px);
-        height:calc(100% - 1px);
-        position:absolute;
+        width:92vw;
+        height:100vh;
         display:flex;
-        flex-direction:column;
+        flex-wrap:wrap;
         overflow-y:scroll;
-        justify-content:start;
-        margin: 1px 0 0 1px;
+        justify-content:space-between;
     }
 
     .gridItem{
         margin:0 0 4vw 0;
-        width:100%;
+        max-width:92vw;
         height:auto;
         filter:grayscale(100%);
         transition:300ms;
