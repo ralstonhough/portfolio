@@ -462,7 +462,7 @@ html{
     }
 
     .projectItem{
-        max-width:92vw;
+        width:92vw;
         height:auto;
         margin:0 0 4vw 0;
     }
