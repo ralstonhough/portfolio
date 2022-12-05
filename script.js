@@ -11,7 +11,7 @@ let scrollableCats = document.getElementsByClassName("scrollableCat");
 let scrollableWordmarks = document.getElementsByClassName("scrollableWordmark");
 
 canvas.onwheel = function(event){
-    if(innerWidth > 820) {
+    if(innerWidth > innerHeight) {
         scrollAmount = event.deltaY;
         if (scrollAmount > 0) {
             for (let nav of scrollableNavs) {
