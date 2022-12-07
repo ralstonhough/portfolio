@@ -123,6 +123,12 @@ a{
     justify-content:space-between;
 }
 
+#noGrid{
+    overflow-y:scroll;
+    height:80vh;
+    width:92vw;
+}
+
 .gridItem{
     max-width:43vw;
     height:auto;
