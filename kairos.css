@@ -1,0 +1,43 @@
+body{
+    background:black;
+  }
+  
+  #dayCircle{
+    border:10vh solid grey;
+    border-radius:50%;
+    background:transparent;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:fixed;
+  }
+  
+  #hourCircle{
+    border:7.5vh solid lightskyblue;
+    border-radius:50%;
+    background:transparent;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:fixed;
+  }
+  
+  #minuteCircle{
+    border:2.5vh solid white;
+    border-radius:50%;
+    background:transparent;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:fixed;
+  }
+  
+  #secondCircle{
+    border:1vh solid red;
+    border-radius:50%;
+    background:transparent;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:fixed;
+  }
