@@ -1,0 +1,35 @@
+#snow{
+    background:black;
+    height:100vh;
+    width:100vw;
+    left:0;
+    top:0;
+    position:fixed;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:start;
+  }
+  
+  #box{
+    background:white;
+    height:40vh;
+    width:40vw;
+    left:30vw;
+    top:30vh;
+    position:fixed;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:start;
+  }
+  
+  .flake{
+    width:.75vw;
+    height:.9vh;
+    background:white;
+  }
+  
+  .content{
+    width:12.5%;
+    height:12.5%;
+    background:white;
+  }
