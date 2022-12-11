@@ -1,0 +1,294 @@
+#stage{
+    width:100vw;
+    height:100vh;
+    background:black;
+    left:0;
+    top:0;
+    position:fixed;
+  }
+  
+  #youGotContainer{
+    width:100vw;
+    top:10%;
+    left:30%;
+    display:flex;
+    justify-content:start;
+    position:fixed;
+  }
+  
+  #youGot{
+    font-family: plantin, serif;
+    font-weight: 300;
+    font-style: italic;
+    color:white;
+    text-shadow: 0 0 1.25vw white;
+    font-size: 3vw;
+    opacity:0;
+    transition: 500ms;
+    margin:auto;
+    position:fixed;
+  }
+  
+  #finalScoreContainer{
+    width:100vw;
+    top:20%;
+    display:flex;
+    justify-content:center;
+    position:fixed;
+  }
+  
+  #finalScore{
+    margin:auto;
+    position:fixed;
+    font-family: fino-sans, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size:25vw;
+    color:white;
+    text-shadow: 0 0 1.25vw white;
+    transition: 500ms;
+    margin:auto;
+    position:fixed;
+  }
+  
+  #messageContainer{
+    width:100vw;
+    bottom:20%;
+    left:60%;
+    display:flex;
+    justify-content:start;
+    position:fixed;
+  }
+  
+  #message{
+    font-family: plantin, serif;
+    font-weight: 300;
+    font-style: italic;
+    color:white;
+    text-shadow: 0 0 1.25vw white;
+    font-size: 3vw;
+    opacity:0;
+    transition: 500ms;
+    margin:auto;
+    position:fixed;
+  }
+  
+  #textContainer{
+    display:flex;
+    position:fixed;
+    width:80vw;
+    height:80vh;
+    top:10%;
+    left:10%;
+    justify-content:center;
+  }
+  
+  #gameText{
+    font-family: plantin, serif;
+    font-weight: 300;
+    font-style: italic;
+    color:white;
+    text-shadow: 0 0 1.25vw white;
+    font-size: 3vw;
+    opacity:0;
+  }
+  
+  #nameContainer{
+    display:flex;
+    position:fixed;
+    width:100vw;
+    justify-content:start;
+    top:10%;
+    left:10%;
+  }
+  
+  #nameTitle{
+    animation:nameOn 3000ms;
+  }
+  
+  #thatContainer{
+    display:flex;
+    position:fixed;
+    width:100vw;
+    justify-content:start;
+    left:37.5%;
+    top:18%;
+  }
+  
+  #thatTitle{
+    animation:nameOn 500ms;
+    animation:thatOn 3000ms;
+  }
+  
+  #movieContainer{
+    display:flex;
+    position:fixed;
+    width:100vw;
+    justify-content:end;
+    top:29%;
+    right:7.5%;
+  }
+  
+  #movieTitle{
+    animation:movieOn 3000ms;
+  }
+  
+  .gameTitle{
+    margin:auto;
+    position:fixed;
+    font-family: fino-sans, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size:12.5vw;
+    color:white;
+    text-shadow: 0 0 1.25vw white;
+  }
+  
+  #startButton{
+    width:15vw;
+    height:10vh;
+    margin:auto;
+    top:70%;
+    right:8%;
+    position:fixed;
+    background:transparent;
+    border: 3px solid white;
+    box-shadow: 0 0 1.25vw white;
+    border-radius: 1.25vw;
+    font-family: fino-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2vw;
+    color:white;
+    text-shadow: 0 0 1.25vw white;
+    transition: transform 200ms;
+    animation: buttonFadeIn 6500ms;
+  }
+  
+  #startButton:hover{
+    transform:scale(1.1);
+  }
+  
+  #answerContainer{
+    position:fixed;
+    display:flex;
+    bottom:10%;
+    left:10%;
+    height:20vh;
+    width:80vw;
+    justify-content:center;
+  }
+  
+  #answerBox{
+    width:40vw;
+    height:8vh;
+    background:black;
+    border: 3px solid white;
+    box-shadow: 0 0 1.25vw white;
+    padding: 1vw;
+    opacity:0;
+    border-radius:1vw;
+    color:white;
+    text-shadow: 0 0 1.25vw white;
+    outline:none;
+    font-family: plantin, serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size:3vw;
+  }
+  
+  #topRow{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    position:fixed;
+    width:100vw;
+    left:0;
+    top:1.25vw;
+  }
+  
+  #bottomRow{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    position:fixed;
+    width:100vw;
+    left:0;
+    bottom:1.25vw;
+  }
+  
+  #leftColumn{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    position:fixed;
+    width:5vw;
+    height:77vh;
+    left:.4vw;
+    top:7vw;
+  }
+  
+  #rightColumn{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    position:fixed;
+    width:5vw;
+    height:77vh;
+    right:.4vw;
+    top:7vw;
+  }
+  
+  .bulb{
+    width:4vw;
+    height:4vw;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 0 1.25vw white;
+    animation:lightsOn 3s;
+  }
+  
+  @keyframes lightsOn{
+    0%{opacity:0;}
+    64%{opacity:0;}
+    65%{opacity:1; box-shadow:0 0 1.25vw white;}
+    82%{opacity:1; box-shadow:0 0 3vw white;}
+    90%{opacity:1; box-shadow:0 0 3vw white;}
+    100%{opacity:1; box-shadow:0 0 1.25vw white;}
+  }
+  
+  @keyframes nameOn{
+    0%{opacity:0;}
+    11%{opacity:0;}
+    12%{opacity:1;}
+    65%{opacity:1; text-shadow:0 0 1.25vw white;}
+    82%{opacity:1; text-shadow:0 0 3vw white;}
+    90%{opacity:1; text-shadow:0 0 3vw white;}
+    100%{opacity:1; text-shadow:0 0 1.25vw white;}
+  }
+  
+  @keyframes thatOn{
+    0%{opacity:0;}
+    32%{opacity:0;}
+    33%{opacity:1;}
+    65%{opacity:1; text-shadow:0 0 1.25vw white;}
+    82%{opacity:1; text-shadow:0 0 3vw white;}
+    90%{opacity:1; text-shadow:0 0 3vw white;}
+    100%{opacity:1; text-shadow:0 0 1.25vw white;}
+  }
+  
+  @keyframes movieOn{
+    0%{opacity:0;}
+    49%{opacity:0;}
+    50%{opacity:1;}
+    65%{opacity:1; text-shadow:0 0 1.25vw white;}
+    82%{opacity:1; text-shadow:0 0 3vw white;}
+    90%{opacity:1; text-shadow:0 0 3vw white;}
+    100%{opacity:1; text-shadow:0 0 1.25vw white;}
+  }
+  
+  @keyframes buttonFadeIn{
+    0%{opacity:0;}
+    50%{opacity:0;}
+    100%{opacity:1;}
+  }
