@@ -130,7 +130,13 @@ a{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+#grid::-webkit-scrollbar{
+    display:none;
+};
 
 #noGrid{
     overflow-y:scroll;
