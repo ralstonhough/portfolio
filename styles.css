@@ -142,13 +142,7 @@ a{
     overflow-y:scroll;
     height:80vh;
     width:92vw;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
-
-#noGrid::-webkit-scrollbar{
-    display:none;
-};
 
 .gridItem{
     max-width:43vw;
