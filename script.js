@@ -19,6 +19,7 @@ canvas.onwheel = function(event){
             };
             for (let bar of scrollableBars) {
                 bar.style.height = "0";
+                bar.style.margin = "0 0 2vw 0";
             };
             for (let cat of scrollableCats) {
                 cat.style.display = "none";
@@ -35,6 +36,7 @@ canvas.onwheel = function(event){
             };
             for (let bar of scrollableBars) {
                 bar.style.height = "16%";
+                bar.style.margin = "0 0 8vw 0";
             };
             for (let cat of scrollableCats) {
                 cat.style.display = "initial";

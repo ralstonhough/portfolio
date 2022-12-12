@@ -37,7 +37,7 @@ a{
     height:16%;
     width: 100%;
     position:sticky;
-    margin: 0 0 4% 0;
+    margin: 0 0 8vw 0;
     transition:300ms;
 }
 
@@ -278,7 +278,7 @@ html{
         height:12%;
         width: 100%;
         position:sticky;
-        margin: 0 0 4% 0;
+        margin: 0 0 4vw 0;
     }
     
     #dropDown{
