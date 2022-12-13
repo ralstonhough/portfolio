@@ -67,8 +67,6 @@ a{
 
 .selected{
     font-weight:700;
-    text-decoration: underline;
-    text-underline-offset: 8px;
     filter:brightness(100%);
 }
 
@@ -77,8 +75,6 @@ a{
 }
 
 .unselected:hover{
-    text-decoration: underline;
-    text-underline-offset: 8px;
     filter:brightness(100%);
 }
 
@@ -249,11 +245,12 @@ a{
 
 #textLink{
     color:white;
+    filter:brightness(50%);
+    transition:300ms;
 }
 
 #textLink:hover{
-    text-decoration: underline;
-    text-underline-offset: 8px;
+    filter:brightness(100%);
 }
 
 .projectItem{
@@ -355,8 +352,6 @@ html{
 
     .selected{
         font-weight:700;
-        text-decoration: underline;
-        text-underline-offset: 8px;
         filter:brightness(100%);
     }
 
