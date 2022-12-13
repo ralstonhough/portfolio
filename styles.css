@@ -149,25 +149,14 @@ a{
 .gridItem{
     max-width:43vw;
     height:auto;
-    filter:grayscale(100%) brightness(50%);
     transition:300ms;
     margin: 0 0 4vw 0;
-}
-
-.gridItem:hover{
-    filter:grayscale(0%) brightness(100%);
 }
 
 #heroImage{
     height:auto;
     width:66vw;
-    filter: grayscale(100%) brightness(50%);
-    transition:300ms;
     margin: 0 4% 0 0;
-}
-
-#heroImage:hover{
-    filter: grayscale(0%) brightness(100%);
 }
 
 #bio{
@@ -414,24 +403,14 @@ html{
         margin:0 0 4vw 0;
         max-width:92vw;
         height:auto;
-        filter:grayscale(100%) brightness(75%);
         transition:300ms;
-    }
-
-    .gridItem:hover{
-        filter:grayscale(0%) brightness(100%);
     }
 
     #heroImage{
         height:auto;
         width:100%;
-        filter: grayscale(100%) brightness(50%);
         transition:300ms;
         margin: 0 0 4vw 0;
-    }
-
-    #heroImage:hover{
-        filter: grayscale(0%) brightness(100%);
     }
     
     #bio{
