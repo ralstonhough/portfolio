@@ -366,6 +366,7 @@ html{
         opacity:1;
         position: absolute;
         z-index:2;
+        filter:brightness(50%);
     }
     
     .menuBar{

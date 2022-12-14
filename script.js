@@ -52,20 +52,22 @@ canvas.onwheel = function(event){
 };
 
 function activateDropDown() {
-        dropDown.style.opacity="1";
-        dropDown.style.height ="100%";
-        content.style.overflow = "hidden";
-        for (let cat of dropNavCats) {
-            cat.classList.add("unfolded");
-            cat.classList.remove("folded");
-            setTimeout(function() {
-                cat.style.opacity = "1";
-            }, 300);
-        };
-        dropDownOpacity = 1;
+    menu.style.filter = "brightness(100%)";   
+    dropDown.style.opacity="1";
+    dropDown.style.height ="100%";
+    content.style.overflow = "hidden";
+    for (let cat of dropNavCats) {
+        cat.classList.add("unfolded");
+        cat.classList.remove("folded");
+        setTimeout(function() {
+            cat.style.opacity = "1";
+        }, 300);
+    };
+    dropDownOpacity = 1;
 };
 
 function deactivateDropDown() {
+    menu.style.filter = "brightness(50%)";
     dropDown.style.opacity="0";
     dropDown.style.height ="0";
     content.style.overflow = "scroll";
