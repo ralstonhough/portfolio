@@ -77,7 +77,7 @@ function activateDropDown() {
     };
 };
 
-menu.addEventListener("click", activateDropDown);
+menu.addEventListener("click touchstart", activateDropDown);
 
 window.onresize = function(){
     dropDown.style.opacity="0";
