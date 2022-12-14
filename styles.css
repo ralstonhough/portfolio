@@ -97,11 +97,6 @@ a{
     margin: 4% 0% 0% 4%;
     opacity:0;
     position: absolute;
-    filter:brightness(50%);
-}
-
-#menu:hover{
-    filter:brightness(100%);
 }
 
 .menuBar{
