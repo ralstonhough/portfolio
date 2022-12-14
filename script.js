@@ -2,7 +2,7 @@ let menu = document.getElementById("menu");
 let dropDown = document.getElementById("dropDown");
 let content = document.getElementById("content");
 let dropNavCats = document.getElementsByClassName("dropNavCat");
-let dropDownOpacity = 0;
+let dropDownOpacity;
 let canvas = document.getElementById("canvas");
 let scrollableNavs = document.getElementsByClassName("scrollableNav");
 let scrollableBars = document.getElementsByClassName("scrollableBar");
@@ -71,9 +71,7 @@ menu.onclick = function(){
         for (let cat of dropNavCats) {
             cat.classList.remove("unfolded");
             cat.classList.add("folded");
-            setTimeout(function() {
-                cat.style.opacity = "0";
-            }, 300);
+            cat.style.opacity = "0";
         };
         dropDownOpacity = 0;
     };

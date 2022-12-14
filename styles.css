@@ -117,6 +117,7 @@ a{
     position:fixed;
     width: 92vw;
     left:4%;
+    transition:300ms;
 }
 
 #grid{
@@ -274,7 +275,7 @@ html{
         position:fixed;
         z-index:3;
         opacity:0;
-        transition: height 300ms;
+        transition: 300ms;
         display:flex;
         flex-direction:column;
         justify-content:flex-start;
@@ -388,6 +389,7 @@ html{
         height: 82.5%;
         overflow:scroll;
         margin:1px 0 0 1px;
+        transition:300ms;
     }
     
     #grid{
