@@ -230,12 +230,12 @@ a{
 
 #textLink{
     color:white;
-    filter:brightness(50%);
     transition:300ms;
 }
 
 #textLink:hover{
-    filter:brightness(100%);
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 
 .projectItem{
@@ -483,8 +483,14 @@ html{
 
     #textLink{
         color:white;
+        transition:300ms;
     }
-
+    
+    #textLink:hover{
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+    
     .projectItem{
         width:92vw;
         height:auto;

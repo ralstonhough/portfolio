@@ -1,0 +1,89 @@
+#background{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    margin: 0;
+    top:0;
+    left:0;
+    background: #b4d9f3;
+    z-index: -1;
+  }
+  
+  #defaultCanvas0{
+    right:0;
+    top:0;
+    position:fixed;
+    margin:0;
+    box-shadow: 0px 0px 25px 0px;
+  }
+  
+  #sentimentLabel{
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight:200;
+    font-style:normal;
+    font-size: 3.5vw;
+    letter-spacing: 2px;
+    color: white;
+    position:fixed;
+    left: 1vw;
+    top: 8px;
+    margin:0;
+  }
+  
+  #sentimentSlider{
+    -webkit-appearance: none;
+    appearance: none;
+    position:fixed;
+    left:1vw;
+    top:9vw;
+    margin:0;
+    width: 25vw;
+    height: 2px;
+    background: white;
+    outline: none;
+  }
+
+  #sentimentSlider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    transition: 200ms;
+  }
+
+  #sentimentSlider::-moz-range-thumb {
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    transition: 200ms;
+  }
+
+  #sentimentSlider::-webkit-slider-thumb:hover{
+    box-shadow: 0 0 3px 0px gray;
+    transform: scale(1.05);
+  }
+
+  #goLive{
+    position: fixed;
+    margin: 0;
+    left: 1vw;
+    top: 18vw;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight:200;
+    font-style:normal;
+    font-size: 3.5vw;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 1vw;
+    letter-spacing: 2px;
+    transition: 200ms;
+  }
+
+  #goLive:hover{
+    box-shadow: 0 0 3px 0px gray;
+    transform: scale(1.05);
+  }
