@@ -65,19 +65,23 @@ function activateDropDown() {
         dropDownOpacity = 1;
 };
 
+function deactivateDropDown() {
+    dropDown.style.opacity="0";
+    dropDown.style.height ="0";
+    content.style.overflow = "scroll";
+    for (let cat of dropNavCats) {
+        cat.classList.remove("unfolded");
+        cat.classList.add("folded");
+        cat.style.opacity = "0";
+    };
+    dropDownOpacity = 0;
+};
+
 menu.onclick = function(){
     if (dropDownOpacity == 0) {
         activateDropDown();
     } else {
-        dropDown.style.opacity="0";
-        dropDown.style.height ="0";
-        content.style.overflow = "scroll";
-        for (let cat of dropNavCats) {
-            cat.classList.remove("unfolded");
-            cat.classList.add("folded");
-            cat.style.opacity = "0";
-        };
-        dropDownOpacity = 0;
+        deactivateDropDown();
     };
 };
 
