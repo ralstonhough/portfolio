@@ -2,7 +2,7 @@ let menu = document.getElementById("menu");
 let dropDown = document.getElementById("dropDown");
 let content = document.getElementById("content");
 let dropNavCats = document.getElementsByClassName("dropNavCat");
-let dropDownOpacity;
+let dropDownOpacity = 0;
 let canvas = document.getElementById("canvas");
 let scrollableNavs = document.getElementsByClassName("scrollableNav");
 let scrollableBars = document.getElementsByClassName("scrollableBar");
@@ -51,8 +51,7 @@ canvas.onwheel = function(event){
     };
 };
 
-menu.onclick = function(){
-    if (dropDownOpacity == 0) {
+function activateDropDown() {
         dropDown.style.opacity="1";
         dropDown.style.height ="100%";
         content.style.overflow = "hidden";
@@ -64,6 +63,11 @@ menu.onclick = function(){
             }, 300);
         };
         dropDownOpacity = 1;
+};
+
+menu.onclick = function(){
+    if (dropDownOpacity == 0) {
+        activateDropDown();
     } else {
         dropDown.style.opacity="0";
         dropDown.style.height ="0";
