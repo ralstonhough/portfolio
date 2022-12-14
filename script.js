@@ -51,7 +51,7 @@ canvas.onwheel = function(event){
     };
 };
 
-menu.onclick = function(){
+function activateDropDown() {
     if (dropDownOpacity == 0) {
         dropDown.style.opacity="1";
         dropDown.style.height ="100%";
@@ -76,6 +76,8 @@ menu.onclick = function(){
         dropDownOpacity = 0;
     };
 };
+
+menu.addEventListener("click", activateDropDown);
 
 window.onresize = function(){
     dropDown.style.opacity="0";
