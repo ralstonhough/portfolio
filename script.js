@@ -98,6 +98,8 @@ window.onresize = function(){
     dropDown.style.opacity="0";
     dropDown.style.height ="0";
     content.style.overflow = "scroll";
+    content.style.scrollbarWidth = "none";
+    content.style.msOverFlowStyle = "none";
     for (let homepage of homepages) {
         homepage.style.overflow = "clip";
     };
