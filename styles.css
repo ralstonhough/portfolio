@@ -8,13 +8,14 @@ body::-webkit-scrollbar{
 }
 
 #showOff{
-    width:100vw;
-    height:100vh;
+    width:66vw;
+    height:83vh;
     position:fixed;
     left:0;
-    top:0;
-    margin:0;
+    bottom:0;
+    margin:0 0 4vw 4vw;
     z-index:0;
+    overflow:clip;
 }
 
 .flake{
