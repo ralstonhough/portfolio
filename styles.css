@@ -23,7 +23,6 @@ body::-webkit-scrollbar{
     border-radius:50%;
     background:white;
     position:fixed;
-    transform-origin: center;
 }
 
 a{
