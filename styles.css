@@ -458,6 +458,12 @@ html{
         flex-wrap:wrap;
         overflow-y:scroll;
         justify-content:space-between;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    grid::-webkit-scrollbar{
+        display:none;
     }
 
     .gridItem{
