@@ -141,6 +141,12 @@ a{
     width: 92vw;
     left:4%;
     transition:300ms;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+content::-webkit-scrollbar{
+    display:none;
 }
 
 #grid{
@@ -407,6 +413,7 @@ html{
         position: absolute;
         z-index:2;
         filter:brightness(50%);
+        cursor:pointer;
     }
     
     .menuBar{
