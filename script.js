@@ -1,6 +1,7 @@
 let menu = document.getElementById("menu");
 let dropDown = document.getElementById("dropDown");
 let content = document.getElementById("content");
+let homepages = document.getElementsByClassName("homepage");
 let dropNavCats = document.getElementsByClassName("dropNavCat");
 let dropDownOpacity = 0;
 let canvas = document.getElementById("canvas");
@@ -71,6 +72,12 @@ function deactivateDropDown() {
     dropDown.style.opacity="0";
     dropDown.style.height ="0";
     content.style.overflow = "scroll";
+    for (let homepage of homepages) {
+        homepage.style.overflow = "clip";
+    };
+    for (let homepage of homepages) {
+        homepage.style.overflow = "clip";
+    };
     for (let cat of dropNavCats) {
         cat.classList.remove("unfolded");
         cat.classList.add("folded");
@@ -91,6 +98,9 @@ window.onresize = function(){
     dropDown.style.opacity="0";
     dropDown.style.height ="0";
     content.style.overflow = "scroll";
+    for (let homepage of homepages) {
+        homepage.style.overflow = "clip";
+    };
     for (let cat of dropNavCats) {
         cat.style.opacity = "0";
         cat.classList.remove("unfolded");
