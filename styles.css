@@ -7,6 +7,24 @@ body::-webkit-scrollbar{
     display:none;
 }
 
+#showOff{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    margin:0;
+    z-index:0;
+}
+
+.flake{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:white;
+    position:fixed;
+}
+
 a{
     cursor:crosshair;
     text-decoration: none;
@@ -31,6 +49,7 @@ a{
 
 #rightContainer{
     width:22vw;
+    margin: 0 0 0 70vw;
 }
 
 #topBar{
@@ -39,6 +58,7 @@ a{
     position:sticky;
     margin: 0 0 8vw 0;
     transition:300ms;
+    z-index:9;
 }
 
 #navbar{
@@ -63,6 +83,7 @@ a{
     opacity: 1;
     margin: 4%;
     transition: 300ms;
+    z-index:6;
 }
 
 .selected{
@@ -149,12 +170,6 @@ a{
     margin: 0 0 2vw 0;
 }
 
-#heroImage{
-    height:auto;
-    width:66vw;
-    margin: 0 4% 0 0;
-}
-
 #bio{
     color: white;
     font-family: proxima-nova, sans-serif;
@@ -172,11 +187,13 @@ a{
     display:flex;
     flex-direction: row;
     justify-content:space-between;
+    z-index:4;
 }
 
 .contact{
     transition:300ms;
     filter:brightness(50%);
+    z-index:5;
 }
 
 .contact:hover{
@@ -256,6 +273,12 @@ html{
 }
 
 @media screen and (max-width: 820px) {
+    #showOff{
+        opacity:0;
+        display:none;
+        visibility:hidden;
+    }
+    
     #topBar{
         height:12%;
         width: 100%;
@@ -274,6 +297,7 @@ html{
         display:flex;
         flex-direction:column;
         justify-content:flex-start;
+        z-index:100;
     }
 
     .dropNavCat{
@@ -299,6 +323,7 @@ html{
     
     #rightContainer{
         width:100%;
+        margin:0;
     }
     
     #canvas{
@@ -402,13 +427,6 @@ html{
         max-width:92vw;
         height:auto;
         transition:300ms;
-    }
-
-    #heroImage{
-        height:auto;
-        width:100%;
-        transition:300ms;
-        margin: 0 0 4vw 0;
     }
     
     #bio{
