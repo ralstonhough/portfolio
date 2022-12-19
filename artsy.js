@@ -3,12 +3,15 @@ let flakes = document.getElementsByClassName("flake");
 let colors = ["black","white"];
 let colorMode = "BnW";
 let flakeSize = 7;
+let showOffPos = showOff.getBoundingClientRect();
+let showOffTop = showOffPos.top;
+let showOffLeft = showOffPos.left;
 
 showOff.onmousemove = function(e){
     let newFlake = document.createElement("DIV");
     newFlake.classList.add("flake");
-    newFlake.style.top = `${e.clientY - flakeSize/2}px`;
-    newFlake.style.left = `${e.clientX - flakeSize/2}px`;
+    newFlake.style.top = `${e.clientY - showOffTop - (flakeSize/2)}px`;
+    newFlake.style.left = `${e.clientX - showOffLeft - (flakeSize/2)}px`;
     newFlake.style.height = `${flakeSize}px`;
     newFlake.style.width = `${flakeSize}px`;
     showOff.appendChild(newFlake);
@@ -59,7 +62,7 @@ showOff.onclick = function(){
         let flakeSaveY = flakeSave.top;
         flake.style.width = `${flakeSize}px`;
         flake.style.height = `${flakeSize}px`;
-        flake.style.left = `calc(${flakeSaveX}px - ${flakeSize*.1}px)`;
-        flake.style.top = `calc(${flakeSaveY}px - ${flakeSize*.1}px`;
+        flake.style.top = `${flakeSaveY - showOffTop - (flakeSize*.1)}px`;
+        flake.style.left = `${flakeSaveX - showOffLeft - (flakeSize*.1)}px`;
     };
 };
