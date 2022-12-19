@@ -179,7 +179,6 @@ a{
     line-height: 1.8vw;
     width:100%;
     margin: 0 0 4vw 0;
-    filter:brightness(50%);
 }
 
 #contactInfo{
@@ -408,7 +407,6 @@ html{
         width: 92%;
         left:4%;
         height: 82.5%;
-        overflow:scroll;
         margin:1px 0 0 1px;
         transition:300ms;
     }
@@ -438,7 +436,6 @@ html{
         line-height: 5vw;
         width:100%;
         margin: 0 0 4vw 0;
-        filter:brightness(50%);
         hyphens:manual;
         -webkit-hyphens: manual;
         -moz-hyphens: manual;
