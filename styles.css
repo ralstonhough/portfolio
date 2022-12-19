@@ -443,6 +443,12 @@ html{
         height: 82.5%;
         margin:1px 0 0 1px;
         transition:300ms;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    content::-webkit-scrollbar{
+        display:none;
     }
     
     #grid{
