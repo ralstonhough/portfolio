@@ -56,7 +56,7 @@ function activateDropDown() {
     menu.style.filter = "brightness(100%)";   
     dropDown.style.opacity="1";
     dropDown.style.height ="100%";
-    content.style.overflow = "hidden";
+    content.style.visibility = "hidden";
     for (let cat of dropNavCats) {
         cat.classList.add("unfolded");
         cat.classList.remove("folded");
@@ -71,7 +71,7 @@ function deactivateDropDown() {
     menu.style.filter = "brightness(50%)";
     dropDown.style.opacity="0";
     dropDown.style.height ="0";
-    content.style.overflow = "scroll";
+    content.style.visibility = "visible";
     for (let homepage of homepages) {
         homepage.style.overflow = "clip";
     };
@@ -97,7 +97,6 @@ menu.onclick = function(){
 window.onresize = function(){
     dropDown.style.opacity="0";
     dropDown.style.height ="0";
-    content.style.overflow = "scroll";
     for (let homepage of homepages) {
         homepage.style.overflow = "clip";
     };
