@@ -23,10 +23,10 @@ body::-webkit-scrollbar{
     border-radius:50%;
     background:white;
     position:fixed;
+    transform-origin: center;
 }
 
 a{
-    cursor:crosshair;
     text-decoration: none;
 }
 
@@ -44,7 +44,6 @@ a{
     left:0;
     top:0;
     position:fixed;
-    cursor: crosshair;
 }
 
 #rightContainer{
