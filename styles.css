@@ -19,8 +19,8 @@ body::-webkit-scrollbar{
 }
 
 .flake{
-    width:7px;
-    height:7px;
+    width:20px;
+    height:20px;
     border-radius:50%;
     background:white;
     position:absolute;
