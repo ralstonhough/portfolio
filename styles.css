@@ -16,6 +16,7 @@ body::-webkit-scrollbar{
     margin:0 0 4vw 4vw;
     z-index:0;
     overflow:clip;
+    cursor:pointer;
 }
 
 .flake{
@@ -208,31 +209,15 @@ content::-webkit-scrollbar{
     transition:300ms;
     filter:brightness(50%);
     z-index:5;
+    font-family: proxima-nova, sans-serif;
+    font-weight:300;
+    font-style:normal;
+    color:white;
+    font-size:1.2vw;
 }
 
 .contact:hover{
     filter:brightness(100%);
-    transform:scale(1.1);
-}
-
-#linkedInIcon{
-    max-width: 21.5%;
-    height: auto;
-}
-
-#gMailIcon{
-    max-width: 30%;
-    height: auto;
-}
-
-#beIcon{
-    max-width: 25%;
-    height: auto;
-}
-
-#instaIcon{
-    max-width: 70%;
-    height: auto;
 }
 
 .heading{
@@ -498,30 +483,15 @@ html{
         justify-content:space-between;
     }
 
-    .contact:hover{
+    .contact{
+        transition:300ms;
+        z-index:5;
+        font-family: proxima-nova, sans-serif;
+        font-weight:300;
+        font-style:normal;
+        color:white;
+        font-size:3.4vw;
         filter:brightness(100%);
-        transform:scale(1);
-    }
-    
-    #linkedInIcon{
-        max-width: 21.5%;
-        height: auto;
-    }
-    
-    #gMailIcon{
-        max-width: 30%;
-        height: auto;
-    }
-    
-    #beIcon{
-        max-width: 25%;
-        height: auto;
-    }
-    
-    #instaIcon{
-        max-width: 70%;
-        height: auto;
-        margin: 0 0 0 30%;
     }
 
     .heading{
