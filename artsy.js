@@ -7,7 +7,7 @@ let showOffPos = showOff.getBoundingClientRect();
 let showOffTop = showOffPos.top;
 let showOffLeft = showOffPos.left;
 
-showOff.onmouseover = function(e){
+showOff.onmousemove = function(e){
     let newFlake = document.createElement("DIV");
     newFlake.classList.add("flake");
     newFlake.style.top = `${e.clientY - showOffTop - (flakeSize/2)}px`;
