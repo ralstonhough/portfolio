@@ -2,12 +2,20 @@ let warning = document.getElementById("warning");
 let warningValue;
 let warningStatus = getCookie("warning_cookie");
 
-if (innerWidth > 820){
-    warningFunction();
-} else {
-    warning.style.visibility = "hidden";
-    warning.style.display = "none";
-    warning.style.opacity = "0";
+warningCheck;
+
+window.onresize = function(){
+    warningCheck;
+};
+
+function warningCheck(){
+    if (innerWidth > 820){
+        warningFunction();
+    } else {
+        warning.style.visibility = "hidden";
+        warning.style.display = "none";
+        warning.style.opacity = "0";
+    };
 };
 
 function warningFunction() {
