@@ -11,6 +11,7 @@ let scrollableGrids = document.getElementsByClassName("scrollableGrid");
 let scrollableCats = document.getElementsByClassName("scrollableCat");
 let scrollableWordmarks = document.getElementsByClassName("scrollableWordmark");
 let warning = document.getElementById("warning");
+console.log(document.cookie);
 
 if (checkCookie("warning_cookie")){
     warning.style.visibility = "hidden";
