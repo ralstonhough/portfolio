@@ -7,17 +7,7 @@ warningCheck;
 window.onresize = warningCheck();
 
 function warningCheck(){
-    if (innerWidth > 820){
-        warningFunction();
-    } else {
-        warning.style.visibility = "hidden";
-        warning.style.display = "none";
-        warning.style.opacity = "0";
-    };
-};
-
-function warningFunction() {
-    if (warningStatus == null) {
+    if (innerWidth > 820 && warningStatus == null){
         setTimeout(warningFade, 5000);
         setTimeout(setCookie("warning_cookie",warningValue,999),5500);
         warningValue = 1;
