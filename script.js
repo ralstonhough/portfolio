@@ -12,7 +12,6 @@ let scrollableCats = document.getElementsByClassName("scrollableCat");
 let scrollableWordmarks = document.getElementsByClassName("scrollableWordmark");
 let warning = document.getElementById("warning");
 let warningValue;
-console.log(document.cookie);
 
 if (getCookie("warning_cookie") == null) {
     setTimeout(warningFade, 5000);
@@ -23,6 +22,7 @@ if (getCookie("warning_cookie") == null) {
     warning.style.display = "none";
     warning.style.opacity = "0";
     console.log("There was already a cookie here.")
+    console.log(document.cookie);
 };
 
 canvas.onwheel = function(event){
