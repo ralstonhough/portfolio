@@ -20,6 +20,7 @@ if (checkCookie("warning_cookie")){
     console.log("The cookie is there, and I read it.")
 } else {
     setTimeout(warningFade, 5000);
+    setCookie("warning_cookie",true,999);
 };
 
 canvas.onwheel = function(event){
@@ -108,7 +109,6 @@ function warningDisable(){
 function warningFade(){
     warning.style.opacity = "0";
     setTimeout(warningDisable, 500);
-    setCookie("warning_cookie",true,999);
 };
 
 function activateDropDown() {
