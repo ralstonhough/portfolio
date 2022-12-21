@@ -8,6 +8,9 @@ window.onresize = warningCheck();
 
 function warningCheck(){
     if (innerWidth > 820 && warningStatus == null){
+        warning.style.visibility = "visible";
+        warning.style.display = "block";
+        warning.style.opacity = "1";
         setTimeout(warningFade, 5000);
         setTimeout(setCookie("warning_cookie",warningValue,999),5500);
         warningValue = 1;
