@@ -11,16 +11,19 @@ let scrollableGrids = document.getElementsByClassName("scrollableGrid");
 let scrollableCats = document.getElementsByClassName("scrollableCat");
 let scrollableWordmarks = document.getElementsByClassName("scrollableWordmark");
 let warning = document.getElementById("warning");
+let warningCookie = getCookie("warning_cookie");
+let warningValue;
 console.log(document.cookie);
 
-if (checkCookie("warning_cookie")){
+if (warningCookie == null) {
+    setTimeout(warningFade, 5000);
+    setCookie("warning_cookie",warningValue,999);
+    warningValue = 0;
+} else {
     warning.style.visibility = "hidden";
     warning.style.display = "none";
     warning.style.opacity = "0";
-    console.log("The cookie is there, and I read it.")
-} else {
-    setTimeout(warningFade, 5000);
-    setCookie("warning_cookie",true,999);
+    console.log("There was already a cookie here.")
 };
 
 canvas.onwheel = function(event){
