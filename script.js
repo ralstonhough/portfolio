@@ -17,6 +17,7 @@ if (checkCookie("warning_cookie")){
     warning.style.visibility = "hidden";
     warning.style.display = "none";
     warning.style.opacity = "0";
+    console.log("The cookie is there, and I read it.")
 } else {
     setTimeout(warningFade, 5000);
 };
