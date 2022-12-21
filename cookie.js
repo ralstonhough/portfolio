@@ -2,14 +2,24 @@ let warning = document.getElementById("warning");
 let warningValue;
 let warningStatus = getCookie("warning_cookie");
 
-if (warningStatus == null) {
-    setTimeout(warningFade, 5000);
-    setTimeout(setCookie("warning_cookie",warningValue,999),5500);
-    warningValue = 1;
+if (innerWidth > 820){
+    warningFunction();
 } else {
     warning.style.visibility = "hidden";
     warning.style.display = "none";
     warning.style.opacity = "0";
+};
+
+function warningFunction() {
+    if (warningStatus == null) {
+        setTimeout(warningFade, 5000);
+        setTimeout(setCookie("warning_cookie",warningValue,999),5500);
+        warningValue = 1;
+    } else {
+        warning.style.visibility = "hidden";
+        warning.style.display = "none";
+        warning.style.opacity = "0";
+    };
 };
 
 function warningFade(){

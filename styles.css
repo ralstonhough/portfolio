@@ -290,6 +290,12 @@ html{
 }
 
 @media screen and (max-width: 820px) {
+    #warning{
+        opacity:0;
+        display:none;
+        visibility:hidden;
+    }
+    
     body{
         -ms-overflow-style: none;
         scrollbar-width: none;
