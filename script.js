@@ -12,11 +12,12 @@ let scrollableCats = document.getElementsByClassName("scrollableCat");
 let scrollableWordmarks = document.getElementsByClassName("scrollableWordmark");
 let warning = document.getElementById("warning");
 let warningValue;
+let warningStatus = getCookie("warning_cookie");
 
-if (getCookie("warning_cookie") == null) {
+if (warningStatus == null) {
     setTimeout(warningFade, 5000);
     setTimeout(setCookie("warning_cookie",warningValue,999),5500);
-    warningValue = 0;
+    warningValue = 1;
 } else {
     warning.style.visibility = "hidden";
     warning.style.display = "none";
