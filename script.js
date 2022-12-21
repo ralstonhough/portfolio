@@ -17,7 +17,7 @@ console.log(document.cookie);
 
 if (warningCookie == null) {
     setTimeout(warningFade, 5000);
-    setCookie("warning_cookie",warningValue,999);
+    setTimeout(setCookie("warning_cookie",warningValue,999),5500);
     warningValue = 0;
 } else {
     warning.style.visibility = "hidden";
