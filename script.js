@@ -11,11 +11,10 @@ let scrollableGrids = document.getElementsByClassName("scrollableGrid");
 let scrollableCats = document.getElementsByClassName("scrollableCat");
 let scrollableWordmarks = document.getElementsByClassName("scrollableWordmark");
 let warning = document.getElementById("warning");
-let warningCookie = getCookie("warning_cookie");
 let warningValue;
 console.log(document.cookie);
 
-if (warningCookie == null) {
+if (getCookie("warning_cookie") == null) {
     setTimeout(warningFade, 5000);
     setTimeout(setCookie("warning_cookie",warningValue,999),5500);
     warningValue = 0;
