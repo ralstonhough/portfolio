@@ -22,8 +22,6 @@ if (warningStatus == null) {
     warning.style.visibility = "hidden";
     warning.style.display = "none";
     warning.style.opacity = "0";
-    console.log("There was already a cookie here.")
-    console.log(document.cookie);
 };
 
 canvas.onwheel = function(event){
@@ -173,11 +171,3 @@ function getCookie(name) {
     };
     return decodeURI(dc.substring(begin + prefix.length, end));
 };
-
-function checkCookie(cname) {
-    if (!getCookie(cname) === undefined) {
-        return true;
-    } else {
-        return false;
-    }
-}
