@@ -4,9 +4,7 @@ let warningStatus = getCookie("warning_cookie");
 
 warningCheck;
 
-window.onresize = function(){
-    warningCheck;
-};
+window.onresize = warningCheck();
 
 function warningCheck(){
     if (innerWidth > 820){
