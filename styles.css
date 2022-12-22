@@ -262,6 +262,18 @@ content::-webkit-scrollbar{
     margin: 0 0 4vw 0;
 }
 
+.caption{
+    color:white;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2vw;
+    line-height: 5vw;
+    width:100%;
+    margin: 0 0 4vw 0;
+    hyphens:manual;
+}
+
 #textLink{
     color:white;
     transition:300ms;
@@ -536,6 +548,18 @@ html{
     }
     
     .description{
+        color:white;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 4vw;
+        line-height: 5vw;
+        width:100%;
+        margin: 0 0 4vw 0;
+        hyphens:manual;
+    }
+
+    .caption{
         color:white;
         font-family: proxima-nova, sans-serif;
         font-weight: 300;
