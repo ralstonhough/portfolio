@@ -42,9 +42,7 @@ function getCookie(name) {
     if (begin == -1) {
         begin = dc.indexOf(prefix);
         if (begin != 0) return null;
-    }
-    else
-    {
+    } else {
         begin += 2;
         var end = document.cookie.indexOf(";", begin);
         if (end == -1) {
