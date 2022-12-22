@@ -252,7 +252,7 @@ content::-webkit-scrollbar{
 }
 
 .description{
-    color:hsl(0,0%,50%);
+    color:white;
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -536,7 +536,7 @@ html{
     }
     
     .description{
-        color:hsl(0,0%,50%);
+        color:white;
         font-family: proxima-nova, sans-serif;
         font-weight: 300;
         font-style: normal;
